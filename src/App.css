@@ -11,6 +11,28 @@ nav {
   color: white;
 }
 
+#shop-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+}
+
+#item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+#item li {
+  text-align: left;
+}
+
+li {
+  list-style: none;
+}
+
 .nav-links {
   width: 40%;
   display: flex;

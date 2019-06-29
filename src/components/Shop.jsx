@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Shop() {
   useEffect(() => {
@@ -9,7 +9,7 @@ function Shop() {
   const [items, setItems] = useState([]);
 
   const fetchItems = () => {
-    fetch('https://fortnite-public-api.theapinetwork.com/prod09/upcoming/get')
+    fetch("https://fortnite-public-api.theapinetwork.com/prod09/upcoming/get")
       .then(data => {
         return data.json();
       })
@@ -19,13 +19,12 @@ function Shop() {
       })
       .catch(error => {
         console.log(error);
-      })
+      });
   };
 
   return (
-    <div>
+    <div id="shop-list">
       <h1>Shop</h1>
-      <h3>Item List</h3>
       <ol>
         {items.map((item, i) => (
           <li key={i}>
