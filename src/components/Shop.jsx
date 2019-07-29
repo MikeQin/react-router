@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-function Shop() {
+const Shop = () => {
   useEffect(() => {
     fetchItems();
   }, []);
@@ -34,6 +34,6 @@ function Shop() {
       </ol>
     </div>
   );
-}
+};
 
 export default Shop;

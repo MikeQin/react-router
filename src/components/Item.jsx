@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function Item({ match }) {
+const Item = ({ match }) => {
   console.log(`match.params.id: ${match.params.id}`);
 
   const [item, setItem] = useState({
